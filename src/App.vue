@@ -1,23 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div class="search-wrapper">
+      <div class="logo-box">
+        <img class="logo-images" src="../static/images/logo2.png" alt="logo" />
+      </div>
+      <div class="serach-box">
+        <input type="text" value="请输入你要查询的内容">
+      </div>
+      <div class="download-box">
+        <a href="javascript:void(0)">下载</a>
+      </div>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App',
+    components: {}
+  }
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import "../static/css/common.css";
+  @import "../static/css/search.css";
+
 </style>
